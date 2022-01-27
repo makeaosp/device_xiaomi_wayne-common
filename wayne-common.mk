@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
     $(WAYNE_COMMON_PATH)/configs/display/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml \
     $(WAYNE_COMMON_PATH)/configs/display/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
 
+# Gapps
+USE_GAPPS ?= true
+TARGET_GAPPS_ARCH ?= arm64
+
 # Overlays
 PRODUCT_PACKAGES += \
     WayneCommonSettings \
